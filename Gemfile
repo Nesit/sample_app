@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem 'bootstrap-sass'
 gem 'pg'
-gem 'bcrypt-ruby'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -11,7 +11,7 @@ gem 'bcrypt-ruby'
 group :development, :test do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.11.0'
-  gem 'guard-rspec'
+  gem 'guard-rspec', '1.2.1'
 end
 
 group :development do
@@ -39,6 +39,7 @@ group :test do
   gem 'guard-spork'
   gem 'childprocess'
   gem 'spork'
+  gem 'factory_girl_rails'
 end
 
 
